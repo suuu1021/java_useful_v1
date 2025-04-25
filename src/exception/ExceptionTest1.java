@@ -18,14 +18,11 @@ public class ExceptionTest1 {
 
 class Calc2 {
     public int divide(int n1, int n2) throws DivideByZeroException {
-        int result = 0;
-
         try {
-            result = n1 / n2;
+            return n1 / n2;
         } catch (Exception e) {
             // 우리가 만든 사용자 정의 예외 클래스를 사용
             throw new DivideByZeroException("0으로 나누지 마세요");
         }
-        return result;
     }
 }
