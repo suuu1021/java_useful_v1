@@ -1,4 +1,4 @@
-package _my_test;
+package _my_test3;
 
 // 상속을 통해서 스레드를 만드는 방법
 public class Worker extends Thread {
@@ -14,7 +14,7 @@ public class Worker extends Thread {
         for (int i = 0; i < 20; i++) {
             System.out.println("woker " + name + " : " + i);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

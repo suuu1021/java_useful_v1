@@ -1,4 +1,4 @@
-package _my_test;
+package _my_test3;
 
 // 인터페이스를 사용해서 스레드를 만드는 방법
 public class Worker2 implements Runnable {
@@ -8,7 +8,7 @@ public class Worker2 implements Runnable {
         for (int i = 0; i < 20; i++) {
             System.out.print(i + "\t");
             try {
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
